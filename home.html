@@ -1,0 +1,84 @@
+<!DOCTYPE hmtl>
+<html>
+
+<head>
+  <link rel="icon" href="icon.png">
+  <title>Linguagens Formais - Analisador Léxico</title>
+  <meta charset="utf-8">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand">Linguagens Formais - 2021</a>      
+      <a class="dev right">Desenvolvido por: Vítor Zaions</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <h1><small>Analisador Léxico</small></h1>
+    </div>
+
+    <div class="row">
+      <div class="response col s12 m3 l4">
+        <label>Adicionar palavra</label>
+        <input type="text" class="form-control word_to_insert" data-placement="top" data-content="Digite a palavra"
+        placeholder="Palavra" aria-describedby="basic-addon2" />
+        
+        <button type="button" class="btn btn-default word_insert">Adicionar</button>
+
+      </div>
+      <div class="response col s12 m3 l4">
+        <label>Buscar palavras</label>
+        <input type="text" class="form-control word_to_find" data-placement="top" title="" data-content="Digite a palavra"
+            placeholder="Palavra" aria-describedby="basic-addon2" />
+            <button type="button" class="btn btn-default word_find">Buscar</button>
+      </div>
+      <div class="response col s8 m3 l3">
+        <button data-target="modal1" class="btn modal-trigger red"><i class="material-icons">delete_sweep</i></button>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="word_chips">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="main table_design">
+          <div class="table-responsive">
+            <table class="table table_automato">
+              <thead>
+                <tr class="alphabet">                 
+                </tr>
+              </thead>
+              <tbody class="words_at">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Cuidado!</h4>
+          <p>Você realmente deseja limpar a tabela?</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close white-text waves-effect waves-green btn-flat teal darken-4">Não</a>
+          <a href="#!" class="modal-close white-text waves-effect waves-green btn-flat red limparTabela">Sim</a>
+        </div>
+      </div>
+
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

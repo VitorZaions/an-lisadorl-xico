@@ -1,0 +1,50 @@
+
+.navbar-default {
+    background-color: #264653;
+    border-color:#264653;
+}
+
+.navbar-brand {
+    margin-left: 15px;
+	font-size: 30px;
+}
+h1{
+	font-size: 47px;
+}
+
+@media only screen and (max-width: 600px) {
+	.dev {
+		display: none;
+	}
+}
+
+.my_td{
+	width: 3%;
+}
+
+.dev {
+	margin-right: 15px;
+}
+
+.response{
+	margin-top: 10px;
+}
+
+
+.table_design{
+	margin-bottom: 0; 
+	padding-bottom: 0;
+	padding: 1% 0% 0% 2% !important;
+}
+
+.word_chips {
+	padding: 0% 0% 0% 1% !important;
+}
+table.table_automato tbody{
+	height: 300px; 
+	overflow: auto;
+}
+
+input, button, .modal-content{
+	border-radius: 0px !important;
+}
